@@ -1,6 +1,6 @@
 var stop, staticx;
 var img = new Image();
-img.src = "https://cdn.jsdelivr.net/gh/xindong2020/PictureBed/hexo/butterfly/config/leaves.png";
+img.src = "https://img.cdn.nesxc.com/2022/02/202202251325420webp";
 
 function Sakura(x, y, s, r, fn) {
     this.x = x;
@@ -149,9 +149,3 @@ function stopp() {
         startSakura()
     }
 };
-
-
-作者: 竹山一叶
-链接: https://zsyyblog.com/933a8718.html
-来源: 竹山一叶
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
