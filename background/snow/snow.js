@@ -7,7 +7,7 @@
 	defaults = {
 		minSize		: 10,
 		maxSize		: 20,
-		newOn		: 1000,
+		newOn		: 300,
 		flakeColor	: "#FFFFFF" /* 此处可以定义雪花颜色 */
 	},
 	options	= $.extend({}, defaults, options);
@@ -15,7 +15,7 @@
 	var startPositionLeft = Math.random() * documentWidth - 100,
 	startOpacity = 0.5 + Math.random(),
 	sizeFlake = options.minSize + Math.random() * options.maxSize,
-	endPositionTop = documentHeight - 10,	/* 此处可以定义雪花下落消失的位置 */
+	endPositionTop = documentHeight - 2,	/* 此处可以定义雪花下落消失的位置 */
 	endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
 	durationFall = documentHeight * 10 + Math.random() * 5000;
 	$flake.clone().appendTo('body').css({
@@ -26,7 +26,7 @@
 	}).animate({
 		top: endPositionTop,
 		left: endPositionLeft,
-		opacity: 0.3
+		opacity: 0.7
 	},durationFall,'linear',function(){
 		$(this).remove()
 	});
@@ -35,8 +35,8 @@
 })(jQuery);
 $(function(){
     $.fn.snow({ 
-	    minSize: 3,		/* 定义雪花最小尺寸 */
-	    maxSize: 20,	/* 定义雪花最大尺寸 */
+	    minSize: 7,		/* 定义雪花最小尺寸 */
+	    maxSize: 22,	/* 定义雪花最大尺寸 */
 	    newOn: 50		/* 定义密集程度，数字越小越密集 */
     });
 });
